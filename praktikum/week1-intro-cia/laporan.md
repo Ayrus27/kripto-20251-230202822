@@ -10,7 +10,6 @@ Kelas: [5IKRA]
 ## 1. Ringkasan Sejarah Kriptografi
 
 ## 2. Prinsip CIA
-Jelaskan tiga pilar keamanan informasi:
     - Confidentiality → Menjaga kerahasiaan yang kita simpan atau akses, bertujuan untuk mencegah akses tidak sah terhadap data sensitif.
     Contoh Nyata: Semisal saya pasien di rumah sakit memiliki data medis pribadi seperti riwayat penyakit, hasil laboratorium. Hanya dokter yang merawat dan staf medis yang boleh mengakses data tersebut.
     - Integrity → 
