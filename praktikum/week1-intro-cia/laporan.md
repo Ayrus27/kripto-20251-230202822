@@ -10,12 +10,12 @@ Kelas: [5IKRA]
 ## 1. Ringkasan Sejarah Kriptografi
 
 ## 2. Prinsip CIA
-    - Confidentiality → Menjaga kerahasiaan yang kita simpan atau akses, bertujuan untuk mencegah akses tidak sah terhadap data sensitif.
-    Contoh Nyata: Semisal saya pasien di rumah sakit memiliki data medis pribadi seperti riwayat penyakit, hasil laboratorium. Hanya dokter yang merawat dan staf medis yang boleh mengakses data tersebut.
-    - Integrity → 
-    Contoh Nyata:
-    - Availability → 
-    Contoh Nyata:
+- Confidentiality → Menjaga kerahasiaan yang kita simpan atau akses, bertujuan untuk mencegah akses tidak sah terhadap data sensitif.
+Contoh Nyata: Kasus kebocoran data pelanggan Tokopedia (2020), di mana data jutaan pengguna seperti email dan password bocor ke forum gelap. Hal ini menunjukkan pelanggaran prinsip confidentiality karena informasi yang seharusnya rahasia justru diakses oleh pihak tidak berwenang.
+- Integrity → Menjamin bahwa data tetap akurat, konsisten, dan tidak diubah seacara tidak sah selama penyimpanan, pemrosesan, atau transmisi.
+Contoh Nyata: Kasus manipulasi data hasil pemilu yang pernah mencuat di media sosial. Meskipun terbukti hoaks, isu tersebut menunjukkan pentingnya menjaga integritas sistem Sirekap KPU agar data perhitungan suara tidak dapat dimodifikasi secara ilegal oleh pihak luar.
+-Availability → Menjamin ketersedian sistem , layanan, dan data tersedia saat dibutuhkan oleh pengguna yang sah. Agar gangguan seperti serangan siber, kegagalan perangkat keras, atau bencana alam harus diminimalkan agar layanan tetap berjalan.
+Contoh Nyata: Pada tahun 2021, layanan e-HAC (Kemenkes) dan PeduliLindungi sempat tidak dapat diakses karena lonjakan pengguna dan gangguan server. Hal ini menjadi contoh gangguan pada aspek availability karena masyarakat tidak bisa menggunakan layanan penting tersebut tepat waktu.
 Tambahkan contoh nyata minimal 1 untuk tiap aspek.
 ## 3. Quiz Singkat
 1. Siapa tokoh yang dianggap sebagai bapak kriptografi modern?
