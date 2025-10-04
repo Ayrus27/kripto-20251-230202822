@@ -10,6 +10,10 @@ Kelas: [5IKRA]
 ## 1. Ringkasan Sejarah Kriptografi
 Kriptografi adalah ilmu dan seni mengamankan informasi untuk menjaga kerahasiaan, integritas, dan keaslian data. Istilah ini berasal dari bahasa Yunani "kryptos", yang berarti "tersembunyi", dan "graphein", yang berarti "menulis". Dalam kriptografi, data diubah menjadi bentuk yang tidak dapat dipahami oleh pihak yang tidak berwenang, biasanya melalui proses enkripsi.
 
+Memasuki abad ke-20, terutama setelah Perang Dunia II dan kemunculan komputer dan kemajuan ilmu matematika, kriptografi mengalami lompatan besar menuju era modern. Kriptografu modern didasarkan pada prinsip matematika dan teori informasi yang kuat, serta dirancang untuk tahan terhadap komputer canggih. Dua contoh utama adalah AES (Advanced Encryption Standard) dan RSA. AES merupakan algoritma simetris yang digunakan secara luas untuk enkripsi data karena kecepatan dan keamanannya, ia mengenkripsi blok data 128-bit dengan kunci 123, 192, atau 256 bit. Sementara itu, RSA adalah algoritma asimetris pertama yang praktis, memanfaatkan kesulitan faktorisasi bilangan prima besar untuk mengamankan komunikasi tanpa pertukaran kunci rahasia menjadi tulang punggung keamanan internet modern seperti SSL/TLS.
+
+
+
 Era kriptografi klasik mencakup metode enkripsi sederhana yang umumnya bergantung pada susbtitusi dan transposisi karakter. Salah satu contoh paling terkenal adalah Caesar Cipher, yang digunakan oleh Julius Caesar pada abad ke-1 SM. Metode ini menggeser setiap huruf dalam alfabet sebanhyak tiga posisi ke depan (misalnya, A mmenjadi D). Meski mudah dipecahkan dengan analisis frekuensi, Caesar Cipher menjadi fondasi awal kriptografi. Kemudian muncul Vigenere Cipher pada abad ke-16, yang menggunakan kunci berulang untuk mengenkripsi teks, sehingga lebih tahan terhadap analisis frekuensi sederhana. Meski demikian, keduanya tetap rentan terhadap serangan kriptoanalisis modern.
 ## 2. Prinsip CIA
 - Confidentiality → Menjaga kerahasiaan yang kita simpan atau akses, bertujuan untuk mencegah akses tidak sah terhadap data sensitif.
