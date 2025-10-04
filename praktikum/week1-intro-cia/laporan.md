@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 1  
-Topik: [intro]  
+Topik: [RIngkasan Sejarah dan Quizint]  
 Nama: [Surya Subekti]  
 NIM: [230202822]  
 Kelas: [5IKRA]  
@@ -12,9 +12,9 @@ Kriptografi adalah ilmu dan seni mengamankan informasi untuk menjaga kerahasiaan
 
 Memasuki abad ke-20, terutama setelah Perang Dunia II dan kemunculan komputer dan kemajuan ilmu matematika, kriptografi mengalami lompatan besar menuju era modern. Kriptografu modern didasarkan pada prinsip matematika dan teori informasi yang kuat, serta dirancang untuk tahan terhadap komputer canggih. Dua contoh utama adalah AES (Advanced Encryption Standard) dan RSA. AES merupakan algoritma simetris yang digunakan secara luas untuk enkripsi data karena kecepatan dan keamanannya, ia mengenkripsi blok data 128-bit dengan kunci 123, 192, atau 256 bit. Sementara itu, RSA adalah algoritma asimetris pertama yang praktis, memanfaatkan kesulitan faktorisasi bilangan prima besar untuk mengamankan komunikasi tanpa pertukaran kunci rahasia menjadi tulang punggung keamanan internet modern seperti SSL/TLS.
 
+Era kriptografi klasik mencakup metode enkripsi sederhana yang umumnya bergantung pada susbtitusi dan transposisi karakter. Salah satu contoh paling terkenal adalah Caesar Cipher, yang digunakan oleh Julius Caesar pada abad ke-1 SM. Metode ini menggeser setiap huruf dalam alfabet sebanhyak tiga posisi ke depan (misalnya, A mmenjadi D). Meski mudah dipecahkan dengan analisis frekuensi, Caesar Cipher menjadi fondasi awal kriptografi. Kemudian muncul Vigenere Cipher pada abad ke-16, yang menggunakan kunci berulang untuk mengenkripsi teks, sehingga lebih tahan terhadap analisis frekuensi sederhana. Meski demikian, keduanya tetap rentan terhadap serangan kriptoanalisis modern. Selain itu, muncul pula bidang seperti homomorphic encryption, zero-knowledge proofs, dan kriptografi pasca-kuantum yang dirancang untuk menghadapi ancaman komputer kuantum di masa depan.
 
-
-Era kriptografi klasik mencakup metode enkripsi sederhana yang umumnya bergantung pada susbtitusi dan transposisi karakter. Salah satu contoh paling terkenal adalah Caesar Cipher, yang digunakan oleh Julius Caesar pada abad ke-1 SM. Metode ini menggeser setiap huruf dalam alfabet sebanhyak tiga posisi ke depan (misalnya, A mmenjadi D). Meski mudah dipecahkan dengan analisis frekuensi, Caesar Cipher menjadi fondasi awal kriptografi. Kemudian muncul Vigenere Cipher pada abad ke-16, yang menggunakan kunci berulang untuk mengenkripsi teks, sehingga lebih tahan terhadap analisis frekuensi sederhana. Meski demikian, keduanya tetap rentan terhadap serangan kriptoanalisis modern.
+Pada abad ke-21, kriptografi terus berkembang menjadi kriptografi kontemporer, yang tidak hanya fokus pada kerahasiaan data, tetapi juga pada integritas, otentikasi, dan desentralisasi. inovasi seperti blockchain dan cryptocurrency (misalnya Bitcoin) memanfaatkan fungsi hash kriptografis (seperti SHA-256) dan tanda tangan digital berbasis kriptografi asimetris untuk menciptakan sistem transaksi yang transparan, aman, dan tidak bergantung pada otoritas pusat.
 ## 2. Prinsip CIA
 - Confidentiality → Menjaga kerahasiaan yang kita simpan atau akses, bertujuan untuk mencegah akses tidak sah terhadap data sensitif.
 Contoh Nyata: Kasus kebocoran data pelanggan Tokopedia (2020), di mana data jutaan pengguna seperti email dan password bocor ke forum gelap. Hal ini menunjukkan pelanggaran prinsip confidentiality karena informasi yang seharusnya rahasia justru diakses oleh pihak tidak berwenang.
@@ -36,3 +36,9 @@ Tambahkan contoh nyata minimal 1 untuk tiap aspek.
     - Keamanan: Kriptografi klasik rentan terhadap analisis frekuensi dan serangan manual, sedangkan kriptografi modern dirancang untuk tahan terhadap serangan komputasi canggih.
     - Skema Kunci: Kriptografi klasik hanya menggunakan kunci simetris(satu kunci untuk enkripsi dan deskripsi), sedangkan kriptografi modern menggunakan kunci asimetris (kunci publik dan privat).
     - Aplikasi: Kriptografi klasik digunakan untuk komunikasi rahasia sederhana, sedangkan kriptografi modern mendukung keamanan digital modern saat ini seperti e-commerce, blockchain, otentitikasi, dan komunikasi aman di internet.
+
+## 4. Commit Log
+
+commit week1-intro-cia
+Author: Surya Subekti <suryasubekti28@gmail.com>
+Date:   2025-10-04
