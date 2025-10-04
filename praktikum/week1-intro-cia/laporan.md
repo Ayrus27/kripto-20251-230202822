@@ -8,7 +8,9 @@ Kelas: [5IKRA]
 ---
 
 ## 1. Ringkasan Sejarah Kriptografi
+Kriptografi adalah ilmu dan seni mengamankan informasi untuk menjaga kerahasiaan, integritas, dan keaslian data. Istilah ini berasal dari bahasa Yunani "kryptos", yang berarti "tersembunyi", dan "graphein", yang berarti "menulis". Dalam kriptografi, data diubah menjadi bentuk yang tidak dapat dipahami oleh pihak yang tidak berwenang, biasanya melalui proses enkripsi.
 
+Era kriptografi klasik mencakup metode enkripsi sederhana yang umumnya bergantung pada susbtitusi dan transposisi karakter. Salah satu contoh paling terkenal adalah Caesar Cipher, yang digunakan oleh Julius Caesar pada abad ke-1 SM. Metode ini menggeser setiap huruf dalam alfabet sebanhyak tiga posisi ke depan (misalnya, A mmenjadi D). Meski mudah dipecahkan dengan analisis frekuensi, Caesar Cipher menjadi fondasi awal kriptografi. Kemudian muncul Vigenere Cipher pada abad ke-16, yang menggunakan kunci berulang untuk mengenkripsi teks, sehingga lebih tahan terhadap analisis frekuensi sederhana. Meski demikian, keduanya tetap rentan terhadap serangan kriptoanalisis modern.
 ## 2. Prinsip CIA
 - Confidentiality → Menjaga kerahasiaan yang kita simpan atau akses, bertujuan untuk mencegah akses tidak sah terhadap data sensitif.
 Contoh Nyata: Kasus kebocoran data pelanggan Tokopedia (2020), di mana data jutaan pengguna seperti email dan password bocor ke forum gelap. Hal ini menunjukkan pelanggaran prinsip confidentiality karena informasi yang seharusnya rahasia justru diakses oleh pihak tidak berwenang.
