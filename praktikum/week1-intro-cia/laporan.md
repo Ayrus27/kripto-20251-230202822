@@ -38,7 +38,6 @@ Tambahkan contoh nyata minimal 1 untuk tiap aspek.
     - Aplikasi: Kriptografi klasik digunakan untuk komunikasi rahasia sederhana, sedangkan kriptografi modern mendukung keamanan digital modern saat ini seperti e-commerce, blockchain, otentitikasi, dan komunikasi aman di internet.
 
 ## 4. Commit Log
-
 commit week1-intro-cia
 Author: Surya Subekti <suryasubekti28@gmail.com>
 Date:   2025-10-04
