@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 1  
-Topik: [RIngkasan Sejarah dan Quizint]  
+Topik: [RIngkasan Sejarah dan Quiz]  
 Nama: [Surya Subekti]  
 NIM: [230202822]  
 Kelas: [5IKRA]  
