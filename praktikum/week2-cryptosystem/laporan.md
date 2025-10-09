@@ -64,10 +64,37 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+Jawab pertanyaan diskusi yang diberikan pada modul.  
+1. Sebutkan komponen utama dalam sebuah kriptosistem. 
+    - Sebuah kriptosistem (sistem kriptografi) terdiri dari lima komponen utama:
+        - Plaintext (Teks Asli)
+            Data atau pesan asli yang akan diamankan sebelum dikirim.
+        - Algoritma Enkripsi
+            Prosedur matematis yang digunakan untuk mengubah plaintext menjadi ciphertext (teks terenkripsi).
+        - Ciphertext (Teks Terenkripsi)
+            Hasil dari proses enkripsi; data yang tidak dapat dibaca tanpa dekripsi.
+        - Algoritma Dekripsi
+            Prosedur matematis yang digunakan untuk mengembalikan ciphertext menjadi plaintext.
+        - Kunci (Key)
+            Parameter rahasia yang digunakan dalam proses enkripsi dan/atau dekripsi. Keamanan sistem sangat bergantung pada kerahasiaan dan kekuatan kunci.
+2. Apa kelebihan dan kelemahan sistem simetris dibandingkan asimetris?
+    - Simetris
+        - Kelebihan:
+            - Lebih cepat dan efisien secara komputasi.
+            - Cocok untuk enkripsi data dalam jumlah besar (misalnya file, komunikasi real-time).
+        - Kekurangan:
+            - Masalah distribusi kunci: kedua pihak harus memiliki kunci yang sama dan menjaganya tetap rahasia.
+            - Tidak mendukung tanda tangan digital secara alami.
+    - Asimetris
+        - Kelebihan:
+            - Tidak memerlukan pertukaran kunci rahasia secara aman sebelum komunikasi.
+            - Mendukung fitur seperti tanda tangan digital dan autentikasi.
+        - Kekurangan:
+            - Jauh lebih lambat dan membutuhkan sumber daya komputasi lebih besar.
+            - Tidak efisien untuk enkripsi data besar secara langsung.
+3. Pertanyaan 3: Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?
+    - Karena pada kriptografi simetris proses enkripsi dan dekripsi menggunakan kunci yang sama, maka pengirim dan penerima pesan harus memiliki kunci identik agar komunikasi dapat berlangsung. Masalah muncul pada tahap distribusi kunci, yaitu bagaimana cara mengirimkan kunci rahasia tersebut kepada pihak penerima tanpa diketahui oleh pihak lain. Jika kunci berhasil disadap atau dicuri selama proses distribusi, maka seluruh sistem keamanan akan terganggu karena pihak ketiga dapat membaca pesan yang terenkripsi. Oleh sebab itu, distribusi kunci menjadi masalah utama dalam kriptografi simetris dan sering diatasi dengan memanfaatkan kriptografi asimetris untuk menukar kunci secara aman.
+
 ---
 
 ## 8. Kesimpulan
