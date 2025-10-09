@@ -8,7 +8,8 @@ Kelas: [5IKRA]
 ---
 
 ## 1. Tujuan
-(Tujuan dari implementasi Caesar Cipher adalah untuk memahami konsep dasar kriptografi klasik, khususnya proses enkripsi dan dekripsi menggunakan metode substitusi sederhana. Melalui penerapan algoritma ini, mahasiswa dapat mempelajari bagaimana pesan teks dapat diubah menjadi bentuk yang tidak dapat dibaca tanpa kunci tertentu, serta bagaimana kunci digunakan untuk mengembalikan pesan ke bentuk aslinya. Selain itu, implementasi Caesar Cipher juga bertujuan untuk menunjukkan kelemahan sistem kriptografi sederhana terhadap serangan brute force dan analisis frekuensi, sehingga dapat menjadi dasar pemahaman bagi algoritma kriptografi modern yang lebih kompleks.)
+
+Tujuan dari implementasi Caesar Cipher adalah untuk memahami konsep dasar kriptografi klasik, khususnya proses enkripsi dan dekripsi menggunakan metode substitusi sederhana. Melalui penerapan algoritma ini, mahasiswa dapat mempelajari bagaimana pesan teks dapat diubah menjadi bentuk yang tidak dapat dibaca tanpa kunci tertentu, serta bagaimana kunci digunakan untuk mengembalikan pesan ke bentuk aslinya. Selain itu, implementasi Caesar Cipher juga bertujuan untuk menunjukkan kelemahan sistem kriptografi sederhana terhadap serangan brute force dan analisis frekuensi, sehingga dapat menjadi dasar pemahaman bagi algoritma kriptografi modern yang lebih kompleks.
 ---
 
 ## 2. Dasar Teori
