@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Topik: [Praktikum Cryptosystem]  
+Nama: [Surya Subekti]  
+NIM: [230202822]  
+Kelas: [5IKRA]  
 
 ---
 
@@ -67,15 +67,15 @@ Hasil eksekusi program Caesar Cipher:
 Jawab pertanyaan diskusi yang diberikan pada modul.  
 1. Sebutkan komponen utama dalam sebuah kriptosistem. 
     - Sebuah kriptosistem (sistem kriptografi) terdiri dari lima komponen utama:
-        - Plaintext (Teks Asli)
+        - Plaintext (Teks Asli):
             Data atau pesan asli yang akan diamankan sebelum dikirim.
-        - Algoritma Enkripsi
+        - Algoritma Enkripsi:
             Prosedur matematis yang digunakan untuk mengubah plaintext menjadi ciphertext (teks terenkripsi).
-        - Ciphertext (Teks Terenkripsi)
+        - Ciphertext (Teks Terenkripsi):
             Hasil dari proses enkripsi; data yang tidak dapat dibaca tanpa dekripsi.
-        - Algoritma Dekripsi
+        - Algoritma:
             Prosedur matematis yang digunakan untuk mengembalikan ciphertext menjadi plaintext.
-        - Kunci (Key)
+        - Kunci (Key):
             Parameter rahasia yang digunakan dalam proses enkripsi dan/atau dekripsi. Keamanan sistem sangat bergantung pada kerahasiaan dan kekuatan kunci.
 2. Apa kelebihan dan kelemahan sistem simetris dibandingkan asimetris?
     - Simetris
