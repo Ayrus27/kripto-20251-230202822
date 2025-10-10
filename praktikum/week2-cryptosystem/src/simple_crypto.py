@@ -1,22 +1,31 @@
-def encrypt(text, key):
-    result = ""
-    for char in text:
-        if char.isalpha():
-            shift = 65 if char.isupper() else 97
-            result += chr((ord(char) - shift + key) % 26 + shift)
+# Program: Simulasi Enkripsi & Dekripsi Caesar Cipher
+# Oleh: [Nama Anda]
+
+def enkripsi_caesar(plaintext, shift):
+    hasil = ""
+    for char in plaintext:
+        if char.isalpha():  # hanya huruf yang dienkripsi
+            # tentukan base (A atau a)
+            base = ord('A') if char.isupper() else ord('a')
+            # geser huruf sesuai shift
+            hasil += chr((ord(char) - base + shift) % 26 + base)
         else:
-            result += char
-    return result
+            hasil += char  # karakter non-huruf tidak diubah
+    return hasil
 
-def decrypt(cipher, key):
-    return encrypt(cipher, -key)
 
-# Contoh penggunaan
-plain_text = input("Masukkan teks asli: ")
-key = int(input("Masukkan kunci pergeseran: "))
+def dekripsi_caesar(ciphertext, shift):
+    # cukup panggil fungsi enkripsi dengan pergeseran negatif
+    return enkripsi_caesar(ciphertext, -shift)
 
-cipher_text = encrypt(plain_text, key)
-print("Teks terenkripsi:", cipher_text)
 
-decrypted_text = decrypt(cipher_text, key)
-print("Teks terdekripsi:", decrypted_text)
+# ---- Program Utama ----
+if __name__ == "__main__":
+    teks_asli = input("Masukkan teks asli (plaintext): ")
+    kunci = int(input("Masukkan nilai pergeseran (key): "))
+
+    cipher = enkripsi_caesar(teks_asli, kunci)
+    print("\nHasil Enkripsi  :", cipher)
+
+    hasil_dekripsi = dekripsi_caesar(cipher, kunci)
+    print("Hasil Dekripsi  :", hasil_dekripsi)
