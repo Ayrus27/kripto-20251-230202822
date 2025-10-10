@@ -42,6 +42,7 @@ Contoh format:
 ---
 
 ## 5. Source Code
+
 def enkripsi_caesar(plaintext, shift):
     hasil = ""
     for char in plaintext:
@@ -60,7 +61,7 @@ def dekripsi_caesar(ciphertext, shift):
     return enkripsi_caesar(ciphertext, -shift)
 
 
-# ---- Program Utama ----
+---- Program Utama ----
 if __name__ == "__main__":
     teks_asli = input("Masukkan teks asli (plaintext): ")
     kunci = int(input("Masukkan nilai pergeseran (key): "))
