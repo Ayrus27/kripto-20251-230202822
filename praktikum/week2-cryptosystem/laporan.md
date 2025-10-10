@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 2
-Topik: [Praktikum Cryptosystem]  
+Topik: [Cryptosystem]  
 Nama: [Surya Subekti]  
 NIM: [230202822]  
 Kelas: [5IKRA]  
@@ -9,13 +9,18 @@ Kelas: [5IKRA]
 
 ## 1. Tujuan
 
-Tujuan dari implementasi Caesar Cipher adalah untuk memahami konsep dasar kriptografi klasik, khususnya proses enkripsi dan dekripsi menggunakan metode substitusi sederhana. Melalui penerapan algoritma ini, mahasiswa dapat mempelajari bagaimana pesan teks dapat diubah menjadi bentuk yang tidak dapat dibaca tanpa kunci tertentu, serta bagaimana kunci digunakan untuk mengembalikan pesan ke bentuk aslinya. Selain itu, implementasi Caesar Cipher juga bertujuan untuk menunjukkan kelemahan sistem kriptografi sederhana terhadap serangan brute force dan analisis frekuensi, sehingga dapat menjadi dasar pemahaman bagi algoritma kriptografi modern yang lebih kompleks.
+1. Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).  
+2. Menggambarkan proses enkripsi dan dekripsi sederhana.  
+3. Mengklasifikasikan jenis kriptosistem (simetris dan asimetris). 
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Cryptosystem atau sistem kriptografi adalah seperangkat metode yang digunakan untuk mengamankan pesan atau data agar hanya pihak tertentu yang dapat membacanya. Sistem ini memastikan kerahasiaan, keaslian, integritas, dan keabsahan informasi dalam proses komunikasi digital. Dengan demikian, cryptosystem berperan penting dalam menjaga keamanan data pada jaringan modern.
+
+Dalam sebuah cryptosystem, terdapat beberapa komponen utama yaitu plaintext (pesan asli), ciphertext (pesan terenkripsi), algoritma enkripsi dan dekripsi, serta kunci (key) yang digunakan untuk mengubah dan mengembalikan pesan. Proses enkripsi mengubah plaintext menjadi ciphertext, sedangkan dekripsi mengembalikan ciphertext ke bentuk aslinya menggunakan kunci yang sesuai.
+
+Terdapat dua jenis utama cryptosystem, yaitu kriptografi simetris dan kriptografi asimetris. Kriptografi simetris menggunakan satu kunci yang sama untuk enkripsi dan dekripsi, contohnya Caesar Cipher dan AES. Sedangkan kriptografi asimetris menggunakan dua kunci berbeda, yaitu kunci publik dan kunci privat, seperti pada algoritma RSA. Kedua jenis ini banyak digunakan dalam aplikasi keamanan seperti HTTPS, email terenkripsi, dan tanda tangan digital.
 
 ---
 
@@ -104,10 +109,7 @@ Jawab pertanyaan diskusi yang diberikan pada modul.
 ---
 
 ## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
+
 
 ---
 
