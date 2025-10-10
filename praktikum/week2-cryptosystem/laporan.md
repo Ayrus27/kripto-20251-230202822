@@ -125,7 +125,7 @@ Jawab pertanyaan diskusi yang diberikan pada modul.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+
 
 ---
 
@@ -135,12 +135,11 @@ Jawab pertanyaan diskusi yang diberikan pada modul.
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
+commit week-cryptosystem
+Author: Surya Subekti <suryasubekti28@gmail.com>
+Date:   2025-10-10
+
+    week2-cryptosystem: implementasi Caesar Cipher dan laporan 
 ```
