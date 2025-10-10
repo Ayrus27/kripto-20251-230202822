@@ -43,35 +43,6 @@ Contoh format:
 
 ## 5. Source Code
 
-def enkripsi_caesar(plaintext, shift):
-    hasil = ""
-    for char in plaintext:
-        if char.isalpha():  # hanya huruf yang dienkripsi
-            # tentukan base (A atau a)
-            base = ord('A') if char.isupper() else ord('a')
-            # geser huruf sesuai shift
-            hasil += chr((ord(char) - base + shift) % 26 + base)
-        else:
-            hasil += char  # karakter non-huruf tidak diubah
-    return hasil
-
-
-def dekripsi_caesar(ciphertext, shift):
-    # cukup panggil fungsi enkripsi dengan pergeseran negatif
-    return enkripsi_caesar(ciphertext, -shift)
-
-
----- Program Utama ----
-if __name__ == "__main__":
-    teks_asli = input("Masukkan teks asli (plaintext): ")
-    kunci = int(input("Masukkan nilai pergeseran (key): "))
-
-    cipher = enkripsi_caesar(teks_asli, kunci)
-    print("\nHasil Enkripsi  :", cipher)
-
-    hasil_dekripsi = dekripsi_caesar(cipher, kunci)
-    print("Hasil Dekripsi  :", hasil_dekripsi)
-
 
 ---
 
@@ -119,7 +90,7 @@ Jawab pertanyaan diskusi yang diberikan pada modul.
         - Kekurangan:
             - Jauh lebih lambat dan membutuhkan sumber daya komputasi lebih besar.
             - Tidak efisien untuk enkripsi data besar secara langsung.
-3. Pertanyaan 3: Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?
+3. Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?
     - Karena pada kriptografi simetris proses enkripsi dan dekripsi menggunakan kunci yang sama, maka pengirim dan penerima pesan harus memiliki kunci identik agar komunikasi dapat berlangsung. Masalah muncul pada tahap distribusi kunci, yaitu bagaimana cara mengirimkan kunci rahasia tersebut kepada pihak penerima tanpa diketahui oleh pihak lain. Jika kunci berhasil disadap atau dicuri selama proses distribusi, maka seluruh sistem keamanan akan terganggu karena pihak ketiga dapat membaca pesan yang terenkripsi. Oleh sebab itu, distribusi kunci menjadi masalah utama dalam kriptografi simetris dan sering diatasi dengan memanfaatkan kriptografi asimetris untuk menukar kunci secara aman.
 
 ---
