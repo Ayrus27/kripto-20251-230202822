@@ -1,6 +1,3 @@
-# Program: Simulasi Enkripsi & Dekripsi Caesar Cipher
-# Oleh: [Nama Anda]
-
 def enkripsi_caesar(plaintext, shift):
     hasil = ""
     for char in plaintext:
