@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 2
-Topik: [Praktikum Cryptosystem]  
+Topik: [Cryptosystem]  
 Nama: [Surya Subekti]  
 NIM: [230202822]  
 Kelas: [5IKRA]  
@@ -16,8 +16,11 @@ Kelas: [5IKRA]
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Cryptosystem atau sistem kriptografi adalah seperangkat metode yang digunakan untuk mengamankan pesan atau data agar hanya pihak tertentu yang dapat membacanya. Sistem ini memastikan kerahasiaan, keaslian, integritas, dan keabsahan informasi dalam proses komunikasi digital. Dengan demikian, cryptosystem berperan penting dalam menjaga keamanan data pada jaringan modern.
+
+Dalam sebuah cryptosystem, terdapat beberapa komponen utama yaitu plaintext (pesan asli), ciphertext (pesan terenkripsi), algoritma enkripsi dan dekripsi, serta kunci (key) yang digunakan untuk mengubah dan mengembalikan pesan. Proses enkripsi mengubah plaintext menjadi ciphertext, sedangkan dekripsi mengembalikan ciphertext ke bentuk aslinya menggunakan kunci yang sesuai.
+
+Terdapat dua jenis utama cryptosystem, yaitu kriptografi simetris dan kriptografi asimetris. Kriptografi simetris menggunakan satu kunci yang sama untuk enkripsi dan dekripsi, contohnya Caesar Cipher dan AES. Sedangkan kriptografi asimetris menggunakan dua kunci berbeda, yaitu kunci publik dan kunci privat, seperti pada algoritma RSA. Kedua jenis ini banyak digunakan dalam aplikasi keamanan seperti HTTPS, email terenkripsi, dan tanda tangan digital.
 
 ---
 
