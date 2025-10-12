@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: 2  
-Topik: Cryptosystem  
-Nama: Surya Subekti 
-NIM: 230202822
-Kelas: 5IKRA  
+Minggu ke-: 2 
+Topik: [Cryptosystem]  
+Nama: [Surya Subekti]  
+NIM: [230202822]  
+Kelas: [5IKRA]  
 
 ---
 
