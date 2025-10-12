@@ -91,7 +91,12 @@ Jawab pertanyaan diskusi yang diberikan pada modul.
 
 ## 8. Kesimpulan
 
-
+    Dari praktikum ini dapat disimpulkan bahwa:
+    1. Kriptosistem terdiri dari komponen penting yaitu plaintext, ciphertext, algoritma, dan kunci.
+    2. Proses enkripsi mengubah pesan asli menjadi bentuk yang tidak terbaca (ciphertext), sedangkan dekripsi mengembalikannya ke bentuk semula.
+    3. Caesar Cipher merupakan contoh sederhana dari kriptografi simetris yang mudah dipahami namun tidak aman untuk penggunaan modern karena kunci dapat ditebak dengan mudah.
+    4. Pemahaman dasar kriptosistem penting sebagai dasar untuk memahami algoritma yang lebih kompleks seperti AES dan RSA.
+    
 ---
 
 ## 9. Daftar Pustaka
