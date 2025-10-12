@@ -101,7 +101,10 @@ Jawab pertanyaan diskusi yang diberikan pada modul.
 ---
 
 ## 9. Daftar Pustaka
-
+(Cantumkan referensi yang digunakan.  
+Contoh:  
+- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
+- Stallings, W. *Cryptography and Network Security*.  )
 
 ---
 
