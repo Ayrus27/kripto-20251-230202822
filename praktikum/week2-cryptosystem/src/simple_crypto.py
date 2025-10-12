@@ -1,28 +1,51 @@
-def enkripsi_caesar(plaintext, shift):
-    hasil = ""
+def encrypt(plaintext, key):
+    result = ""
     for char in plaintext:
-        if char.isalpha():  # hanya huruf yang dienkripsi
-            # tentukan base (A atau a)
-            base = ord('A') if char.isupper() else ord('a')
-            # geser huruf sesuai shift
-            hasil += chr((ord(char) - base + shift) % 26 + base)
+        if char.isalpha():
+            shift = 65 if char.isupper() else 97
+            result += chr((ord(char) - shift + key) % 26 + shift)
         else:
-            hasil += char  # karakter non-huruf tidak diubah
-    return hasil
+            result += char
+    return result
 
+def decrypt(ciphertext, key):
+    result = ""
+    for char in ciphertext:
+        if char.isalpha():
+            shift = 65 if char.isupper() else 97
+            result += chr((ord(char) - shift - key) % 26 + shift)
+        else:
+            result += char
+    return result
 
-def dekripsi_caesar(ciphertext, shift):
-    # cukup panggil fungsi enkripsi dengan pergeseran negatif
-    return enkripsi_caesar(ciphertext, -shift)
-
-
-# ---- Program Utama ----
 if __name__ == "__main__":
-    teks_asli = input("Masukkan teks asli (plaintext): ")
-    kunci = int(input("Masukkan nilai pergeseran (key): "))
+    print("=== Program Caesar Cipher ===")
+    mode = input("Pilih mode [e=encrypt / d=decrypt]: ").strip().lower()
 
-    cipher = enkripsi_caesar(teks_asli, kunci)
-    print("\nHasil Enkripsi  :", cipher)
+    while mode not in {"e", "d"}:
+        mode = input("Mode tidak valid. Pilih [e/d]: ").strip().lower()
 
-    hasil_dekripsi = dekripsi_caesar(cipher, kunci)
-    print("Hasil Dekripsi  :", hasil_dekripsi)
+    text = input("Masukkan teks: ")
+
+    while True:
+        try:
+            key = int(input("Masukkan key (bilangan bulat): ").strip())
+            break
+        except ValueError:
+            print("Key harus bilangan bulat. Coba lagi.")
+
+
+    key = key % 26
+
+    if mode == "e":
+        cipher = encrypt(text, key)
+        print("\n=== HASIL ENKRIPSI ===")
+        print("Plaintext :", text)
+        print("Key       :", key)
+        print("Ciphertext:", cipher)
+    else:
+        plain = decrypt(text, key)
+        print("\n=== HASIL DEKRIPSI ===")
+        print("Ciphertext:", text)
+        print("Key       :", key)
+        print("Plaintext :", plain)
