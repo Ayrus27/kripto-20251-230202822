@@ -123,7 +123,7 @@ Semua hasil sesuai ekspektasi teori. Tidak ditemukan error selama eksekusi.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan hasil percobaan, konsep aritmetika modular terbukti menjadi dasar utama dalam berbagai operasi kriptografi, seperti penjumlahan, perkalian, eksponensiasi, serta pencarian invers modular. Melalui implementasi program, seluruh fungsi berjalan sesuai teori dan menunjukkan pentingnya keterkaitan antara GCD, bilangan prima, dan logaritma diskrit dalam menjaga keamanan sistem kriptografi. Dengan demikian, pemahaman aritmetika modular sangat penting untuk membangun dan menganalisis algoritma enkripsi modern seperti RSA dan Diffie-Hellman.
 
 ---
 
@@ -136,12 +136,10 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit f5bfaf1dc9eb2c699a0c89b5bf17814c6b09706e
+Author: Surya Subekti <115227173+Ayrus27@users.noreply.github.com>
+Date:   Sat Oct 18 10:27:33 2025 +0700
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week3-modmath-gcd: Modular Math
 ```
