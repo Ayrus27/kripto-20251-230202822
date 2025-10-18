@@ -15,8 +15,13 @@ Kelas: [5IKRA]
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Aritmetika Modular adalah cabang matematika yang berfokus pada operasi bilangan dalam sistem bilangan terbatas, di mana hasil operasi dibagi dengan suatu bilangan tertentu yang disebut modulus dan hanya sisanya yang diperhatikan. Konsep ini sering disebut juga sebagai “aritmetika jam,” karena setelah mencapai batas tertentu, perhitungan kembali ke awal. Misalnya, dalam modulus 12, setelah angka 11, hasil berikutnya adalah 0 (seperti jam menunjukkan pukul 12 kembali ke 0). Aritmetika modular sangat penting dalam komputasi karena memungkinkan perhitungan efisien pada bilangan besar tanpa kehilangan makna matematis.
+
+Greatest Common Divisor (GCD) atau faktor persekutuan terbesar adalah konsep yang menentukan bilangan bulat terbesar yang dapat membagi dua bilangan tanpa meninggalkan sisa. Algoritma Euclidean merupakan metode paling efisien untuk menghitung GCD dan menjadi dasar dalam banyak sistem kriptografi, termasuk dalam mencari invers modular. Invers modular diperlukan ketika ingin menemukan bilangan 
+𝑥, x yang memenuhi persamaan 𝑎 × 𝑥 ≡ 1 (mod 𝑛) a×x≡1 (mod n). Tanpa adanya GCD yang sama dengan 1 (artinya 𝑎a dan 𝑛n saling relatif prima), invers modular tidak dapat ditemukan.
+
+Bilangan Prima dan Logaritma Diskrit berperan penting dalam keamanan kriptografi modern. Bilangan prima digunakan sebagai kunci dasar dalam algoritma seperti RSA dan Diffie-Hellman karena sifat uniknya yang sulit untuk diuraikan menjadi faktor bilangan besar. Sementara itu, logaritma diskrit adalah kebalikan dari operasi perpangkatan dalam sistem modular, di mana diberikan gx ≡ y (mod p),maka mencari
+x adalah masalah yang sangat sulit secara komputasional. Kompleksitas perhitungan logaritma diskrit inilah yang menjadikan banyak sistem keamanan digital tetap aman dari serangan brute-force, sekaligus menjadi fondasi penting dalam kriptografi kunci publik. 
 
 ---
 
