@@ -72,7 +72,12 @@ Hasil eksekusi program Caesar Cipher:
         - Menjamin hasil tetap dalam rentang tertentu (tidak tak hingga).
         - Membuat proses enkripsi dan dekripsi dapat dibalik (reversible) dengan aturan tertentu.
 3. Mengapa invers modular penting dalam algoritma kunci publik (misalnya RSA)?
-4. Apa tantangan utama dalam menyelesaikan logaritma diskrit untuk modulus besar?
+   - Karena invers modular memungkinkan proses enkripsi dan dekripsi dalam algoritma kunci publik seperti RSA saling membatalkan satu sama lain secara matematis.
+5. Apa tantangan utama dalam menyelesaikan logaritma diskrit untuk modulus besar?
+   - Tidak adanya algoritma klasik yang efisien (polinomial),
+   - Kompleksitas waktu dan memori yang ekstrem, bahkan dengan algoritma terbaik saat ini,
+   - Ketergantungan pada struktur matematis grup, yang harus dirancang hati-hati untuk menghindari kelemahan,
+   - Ancaman teoretis dari komputasi kuantum, meski belum praktis saat ini.
 ---
 
 ## 8. Kesimpulan
