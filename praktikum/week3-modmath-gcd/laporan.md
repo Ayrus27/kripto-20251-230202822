@@ -65,11 +65,14 @@ Hasil eksekusi program Caesar Cipher:
 
 ---
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+## 7. Jawaban Pertanyaan Diskusi
+1. Apa peran aritmetika modular dalam kriptografi modern?
+   - Aritmetika modular memainkan peran fundamental dalam kriptografi modern. Konsep ini digunakan secara luas karena sifat matematisnya yang cocok untuk membangun sistem kriptografi yang aman, efisien, dan tahan terhadap serangan. Berikut adalah beberapa peran utama aritmetika modular dalam kriptografi modern:
+        - Mendukung Keamanan melalui Kesulitan Masalah Matematis
+        - Menjamin hasil tetap dalam rentang tertentu (tidak tak hingga).
+        - Membuat proses enkripsi dan dekripsi dapat dibalik (reversible) dengan aturan tertentu.
+3. Mengapa invers modular penting dalam algoritma kunci publik (misalnya RSA)?
+4. Apa tantangan utama dalam menyelesaikan logaritma diskrit untuk modulus besar?
 ---
 
 ## 8. Kesimpulan
