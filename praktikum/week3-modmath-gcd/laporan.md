@@ -88,7 +88,7 @@ def discrete_log(a, b, n):
 
 print("3^x ≡ 4 (mod 7), x =", discrete_log(3, 4, 7))
 ```
-)
+
 
 ---
 
