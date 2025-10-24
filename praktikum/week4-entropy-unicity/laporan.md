@@ -42,7 +42,8 @@ Contoh format:
 ---
 
 ## 5. Source Code
-# Program: Analisis Entropy, Unicity Distance, dan Waktu Brute Force
+```python
+# entropy_unicity.py
 # Tujuan: Mengevaluasi kekuatan kunci berdasarkan teori kriptografi
 
 import math
@@ -96,6 +97,7 @@ if __name__ == "__main__":
     # Contoh analisis untuk Caesar Cipher dan AES-128
     print_summary("Caesar Cipher (k = 26)", 26)
     print_summary("AES-128 (k = 2^128)", 2**128)
+```
 
 
 ---
@@ -125,8 +127,11 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan hasil analisis yang dilakukan menggunakan perhitungan entropy, unicity distance, dan simulasi brute force, dapat disimpulkan bahwa kekuatan suatu sistem kriptografi sangat bergantung pada tingkat keacakan dan ukuran ruang kuncinya. Nilai entropy yang tinggi menunjukkan bahwa kunci memiliki tingkat ketidakpastian yang besar, sehingga semakin sulit untuk ditebak atau dipecahkan oleh penyerang.
 
+Selanjutnya, unicity distance memberikan gambaran tentang seberapa banyak ciphertext yang dibutuhkan agar kunci dapat ditentukan secara unik. Semakin besar nilai unicity distance, maka semakin tinggi pula tingkat keamanan suatu cipher karena diperlukan lebih banyak data untuk menemukan kunci yang benar.
+
+Meskipun algoritma kriptografi modern seperti AES memiliki entropi dan unicity distance yang tinggi, serangan brute force tetap menjadi ancaman potensial apabila daya komputasi meningkat di masa depan. Oleh karena itu, pemilihan panjang kunci yang tepat dan manajemen entropi yang baik menjadi faktor utama dalam menjaga keamanan sistem enkripsi secara berkelanjutan.
 ---
 
 ## 9. Daftar Pustaka

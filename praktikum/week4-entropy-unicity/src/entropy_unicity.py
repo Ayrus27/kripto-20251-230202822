@@ -1,6 +1,4 @@
-# Program: Analisis Entropy, Unicity Distance, dan Waktu Brute Force
-# Tujuan: Mengevaluasi kekuatan kunci berdasarkan teori kriptografi
-
+# entropy_unicity.py
 import math
 
 # Langkah 1 — Perhitungan Entropi
