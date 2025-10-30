@@ -156,12 +156,15 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
+
 1. Apa kelemahan utama algoritma Caesar Cipher dan Vigenère Cipher?
-    - 
+    - Caesar Cipher memiliki kelemahan utama karena ruang kuncinya sangat kecil, hanya 25 kemungkinan pergeseran. Hal ini membuatnya mudah dipecahkan dengan cara mencoba semua kunci (brute-force). Selain itu, pola kemunculan huruf dalam ciphertext masih menyerupai plaintext, sehingga mudah dianalisis secara statistik.
+    Sementara itu, Vigenère Cipher memang lebih kuat karena menggunakan kata kunci untuk menentukan pergeseran huruf, namun tetap rentan jika kuncinya pendek atau berulang. Dengan teknik seperti Kasiski examination atau Friedman test, panjang kunci dapat ditebak dan pesan akhirnya bisa diuraikan.
 2. Mengapa cipher klasik mudah diserang dengan analisis frekuensi?
-    - 
+    - Karena Cipher klasik mudah diserang karena tidak menghilangkan pola distribusi huruf dari bahasa aslinya. Setiap bahasa memiliki karakteristik frekuensi huruf tertentu—misalnya huruf “E” paling sering muncul dalam bahasa Inggris. Pola ini tetap terlihat pada ciphertext hasil enkripsi klasik, sehingga penyerang dapat mencocokkan frekuensi huruf dan menebak huruf aslinya. Dengan metode ini, pesan dapat dipecahkan tanpa mengetahui kunci secara langsung.
 3. Bandingkan kelebihan dan kelemahan cipher substitusi vs transposisi.
-    - 
+    - Cipher substitusi bekerja dengan mengganti setiap huruf pada plaintext dengan huruf lain, seperti pada Caesar atau Vigenère Cipher. Keunggulannya adalah proses enkripsi dan dekripsi yang sederhana, namun kelemahannya terletak pada pola huruf yang masih dapat dianalisis.
+    Sebaliknya, cipher transposisi tidak mengganti huruf, tetapi mengubah urutan huruf dalam pesan. Hal ini membuat distribusi huruf tetap sama namun urutan katanya berubah, sehingga sedikit lebih sulit dianalisis. Akan tetapi, jika digunakan sendirian, transposisi juga mudah dipecahkan dengan mencoba berbagai pola penataan ulang. Kombinasi antara substitusi dan transposisi akan menghasilkan sistem enkripsi klasik yang jauh lebih kuat.
 
 ---
 
