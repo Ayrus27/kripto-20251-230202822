@@ -133,6 +133,7 @@ Berdasarkan hasil analisis yang dilakukan menggunakan perhitungan entropy, unici
 Selanjutnya, unicity distance memberikan gambaran tentang seberapa banyak ciphertext yang dibutuhkan agar kunci dapat ditentukan secara unik. Semakin besar nilai unicity distance, maka semakin tinggi pula tingkat keamanan suatu cipher karena diperlukan lebih banyak data untuk menemukan kunci yang benar.
 
 Meskipun algoritma kriptografi modern seperti AES memiliki entropi dan unicity distance yang tinggi, serangan brute force tetap menjadi ancaman potensial apabila daya komputasi meningkat di masa depan. Oleh karena itu, pemilihan panjang kunci yang tepat dan manajemen entropi yang baik menjadi faktor utama dalam menjaga keamanan sistem enkripsi secara berkelanjutan.
+
 ---
 
 ## 9. Daftar Pustaka
