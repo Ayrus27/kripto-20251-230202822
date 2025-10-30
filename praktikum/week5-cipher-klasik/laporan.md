@@ -148,25 +148,21 @@ if __name__ == "__main__":
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
 Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+
 
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Apa kelemahan utama algoritma Caesar Cipher dan Vigenère Cipher?
+    - 
+2. Mengapa cipher klasik mudah diserang dengan analisis frekuensi?
+    - 
+3. Bandingkan kelebihan dan kelemahan cipher substitusi vs transposisi.
+    - 
+
 ---
 
 ## 8. Kesimpulan
