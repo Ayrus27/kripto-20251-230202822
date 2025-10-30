@@ -152,5 +152,5 @@ commit 34c8bb18d3f87238336c46d27a09de1ef755d886
 Author: Surya Subekti <suryasubekti28@gmmail.com>
 Date:   Fri Oct 24 23:23:39 2025 +0700
 
-    week4-entropy-unicity: implementasi entropy & unicity dan laporan )
+    week4-entropy-unicity: implementasi entropy & unicity dan laporan 
 ```
