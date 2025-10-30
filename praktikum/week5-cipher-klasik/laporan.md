@@ -169,7 +169,9 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Dari pembahasan teori dan implementasi, dapat disimpulkan bahwa cipher klasik seperti Caesar, Vigenère, dan Transposisi merupakan dasar penting dalam kriptografi yang memperkenalkan konsep substitusi dan transposisi huruf. Hasil pengujian program menunjukkan bahwa ketiganya mampu melakukan proses enkripsi dan dekripsi dengan baik sesuai logika masing-masing algoritma.
+
+Namun, cipher klasik memiliki kelemahan utama pada keamanan, karena pola huruf pada ciphertext masih dapat dianalisis menggunakan metode frekuensi atau analisis pola. Caesar dan Vigenère lemah terhadap analisis huruf, sedangkan Transposisi hanya mengacak posisi huruf tanpa mengubah bentuknya. Oleh sebab itu, meskipun sederhana dan edukatif, cipher klasik tidak lagi digunakan untuk keamanan modern, melainkan sebagai dasar pembelajaran prinsip enkripsi.
 
 ---
 
@@ -182,12 +184,12 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
+    week5-cipher-klasik
+
+commit 4bdf1c31e0cefae0165ff9b273e6c34c0161136d
+Author: Surya Subekti <115227173+Ayrus27@users.noreply.github.com>
+Date:   Thu Oct 30 09:37:55 2025 +0700
+
 ```
