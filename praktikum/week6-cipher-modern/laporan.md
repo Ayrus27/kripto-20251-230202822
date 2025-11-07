@@ -144,8 +144,7 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
+Dari teori dan hasil implementasi, dapat disimpulkan bahwa cipher modern seperti AES dan RSA merupakan tulang punggung keamanan digital masa kini. AES unggul dalam efisiensi enkripsi data, sedangkan RSA unggul dalam pengamanan pertukaran kunci dan autentikasi. Pemahaman terhadap keduanya menjadi dasar penting dalam pengembangan sistem keamanan informasi modern.
 ---
 
 ## 9. Daftar Pustaka
