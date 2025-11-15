@@ -71,29 +71,27 @@ print("Kunci bersama Bob   :", shared_secret_B)
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
+Hasil eksekusi program Diffie Hellman:
 
 ![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+
 
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Mengapa Diffie-Hellman memungkinkan pertukaran kunci di saluran publik?
+    - Diffie–Hellman memungkinkan pertukaran kunci melalui saluran publik karena protokol ini tidak pernah menukarkan kunci rahasia secara langsung. Sebaliknya, kedua pihak hanya bertukar parameter publik (seperti g dan p) serta kunci publik hasil perpangkatan modulo. Keamanan proses ini didasarkan pada kesulitan komputasional dari masalah logaritma diskrit, yaitu menentukan nilai kunci privat dari kunci publik hampir mustahil dilakukan dalam waktu yang efisien.
+    Dengan kata lain, meskipun pihak ketiga dapat melihat semua nilai yang dipertukarkan di saluran publik, mereka tetap tidak dapat menghitung kunci rahasia bersama, sehingga komunikasi tetap aman.
+2. Apa kelemahan utama protokol Diffie-Hellman murni?
+    - Kelemahan terbesar dari Diffie–Hellman murni adalah tidak adanya mekanisme autentikasi. Protokol ini hanya membangun kunci bersama, tetapi tidak memverifikasi identitas pihak yang terlibat.
+    Akibatnya, penyerang dapat menyisipkan diri di antara dua pihak, memalsukan kunci publik, dan membangun dua kunci berbeda—satu dengan masing-masing pihak. Serangan ini dikenal sebagai Man-in-the-Middle (MITM).
+3. Bagaimana cara mencegah serangan MITM pada protokol ini?
+    - Serangan MITM dapat dicegah dengan menambahkan mekanisme autentikasi pada pertukaran kunci sehingga setiap pihak dapat memastikan bahwa kunci publik yang diterima benar-benar berasal dari lawan komunikasi yang sah. Autentikasi ini dapat dilakukan melalui tanda tangan digital, sertifikat digital (PKI), atau protokol yang sudah menggabungkan autentikasi seperti TLS dengan ECDHE. Dengan autentikasi tersebut, penyerang tidak dapat menyisipkan kunci publik palsu, sehingga pertukaran kunci menjadi aman.
+    
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan praktikum yang dilakukan, protokol Diffie–Hellman terbukti mampu menghasilkan kunci rahasia bersama meskipun proses pertukaran informasi dilakukan melalui saluran publik. Keamanan protokol ini bergantung pada kompleksitas logaritma diskrit, sehingga pihak ketiga tidak dapat dengan mudah menebak kunci privat. Namun, tanpa mekanisme autentikasi tambahan, Diffie–Hellman tetap rentan terhadap serangan Man-in-the-Middle, sehingga perlu diintegrasikan dengan protokol keamanan lain untuk menjamin identitas pihak yang berkomunikasi.
 
 ---
 
@@ -106,12 +104,10 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+    week7-diffie-hellman
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+commit dcf1d18d2f65d61ec3203b699a1a4449ae0d56b0
+Author: Surya Subekti <115227173+Ayrus27@users.noreply.github.com>
+Date:   Sat Nov 15 18:11:55 2025 +0700
+
 ```
