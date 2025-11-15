@@ -1,20 +1,27 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 7  
+Topik: [Diffiw Hellman]  
+Nama: [Surya Subekti]  
+NIM: [230202822]  
+Kelas: [5IKRA]  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Melakukan simulasi protokol Diffie-Hellman untuk pertukaran kunci publik.
+2. Menjelaskan mekanisme pertukaran kunci rahasia menggunakan bilangan prima dan logaritma diskrit.
+3. Menganalisis potensi serangan pada protokol Diffie-Hellman (termasuk serangan Man-in-the-Middle / MITM).
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Protokol Diffie–Hellman Key Exchange merupakan suatu mekanisme kriptografi yang memungkinkan dua pihak atau lebih untuk membentuk kunci rahasia bersama melalui media komunikasi yang tidak aman. Keunikan protokol ini adalah kemampuan menghasilkan kunci bersama tanpa perlu menukarkan kunci rahasia secara langsung, sehingga mengurangi risiko penyadapan selama proses distribusi kunci.
+
+Secara konseptual, Diffie–Hellman memanfaatkan sifat perhitungan modulo pada bilangan prima besar dan konsep logaritma diskrit, yaitu operasi matematika yang secara komputasional mudah dilakukan ke satu arah, namun sulit dibalik tanpa informasi tambahan. Hal ini menjadikan kunci yang dihasilkan sangat sulit direkonstruksi oleh pihak tidak berwenang.
+
+Dalam prosesnya, kedua pihak terlebih dahulu menyepakati dua parameter publik: sebuah bilangan prima besar (p) dan sebuah generator (g). Masing-masing pihak kemudian menghasilkan kunci privat yang tidak dibagikan kepada siapapun, dan dari kunci privat tersebut mereka membentuk kunci publik melalui operasi perpangkatan modulo. Setelah kedua pihak saling bertukar kunci publik, mereka dapat menghitung kunci rahasia bersama dengan menggunakan kunci privat masing-masing. Kunci rahasia yang diperoleh kedua pihak tersebut identik, meskipun mereka tidak pernah bertukar kunci privat.
+
+Keamanan Diffie–Hellman bergantung pada sulitnya memecahkan Diffie–Hellman Problem, yaitu menentukan nilai kunci rahasia hanya berdasarkan informasi publik (g, p, dan kunci publik kedua pihak). Selain itu, protokol ini menjadi dasar bagi berbagai skema keamanan modern, seperti TLS/SSL, VPN, dan metode Perfect Forward Secrecy, yang memerlukan pembentukan kunci aman secara dinamis.
 
 ---
 
@@ -36,15 +43,30 @@ Contoh format:
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
 
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+import random
+
+# parameter umum (disepakati publik)
+p = 23  # bilangan prima
+g = 5   # generator
+
+# private key masing-masing pihak
+a = random.randint(1, p-1)  # secret Alice
+b = random.randint(1, p-1)  # secret Bob
+
+# public key
+A = pow(g, a, p)
+B = pow(g, b, p)
+
+# exchange public key
+shared_secret_A = pow(B, a, p)
+shared_secret_B = pow(A, b, p)
+
+print("Kunci bersama Alice :", shared_secret_A)
+print("Kunci bersama Bob   :", shared_secret_B)
 ```
-)
+
 
 ---
 
