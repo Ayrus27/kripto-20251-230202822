@@ -96,12 +96,12 @@ Hasil Output Program Public Key Infrastructure
 2. Mengapa self-signed certificate tidak cukup untuk sistem produksi?
     Self-signed certificate tidak memadai untuk digunakan pada sistem produksi karena sertifikat tersebut tidak divalidasi oleh pihak ketiga yang tepercaya. Dalam kondisi ini, identitas pemilik sertifikat tidak dapat diverifikasi secara independen, sehingga berpotensi menimbulkan risiko keamanan seperti pemalsuan identitas. Selain itu, browser dan sistem operasi umumnya tidak mempercayai self-signed certificate secara default, yang menyebabkan peringatan keamanan dan menurunkan tingkat kepercayaan pengguna terhadap layanan yang disediakan.
 3. Bagaimana PKI mencegah serangan MITM dalam komunikasi TLS/HTTPS?
-    Public Key Infrastructure (PKI) mencegah serangan Man-in-the-Middle (MITM) dengan memastikan keaslian identitas server melalui proses verifikasi sertifikat digital yang diterbitkan oleh CA tepercaya. Pada saat koneksi TLS/HTTPS dibangun, klien akan memeriksa validitas sertifikat server, termasuk tanda tangan CA dan kesesuaian nama domain. Jika sertifikat tidak valid atau tidak dipercaya, koneksi akan ditolak. Mekanisme ini mencegah penyerang menyamar sebagai server asli, sehingga integritas dan kerahasiaan komunikasi tetap terjaga.
+    
 
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan hasil praktikum, dapat disimpulkan bahwa proses pembuatan sertifikat digital menggunakan konsep Public Key Infrastructure (PKI) berhasil dilakukan dengan memanfaatkan kriptografi kunci publik RSA. Praktikum ini menunjukkan peran penting Certificate Authority (CA) dalam menjamin keaslian identitas melalui sertifikat digital. Selain itu, PKI terbukti berperan penting dalam mendukung komunikasi yang aman dan tepercaya, seperti pada implementasi TLS/HTTPS, dengan mencegah ancaman penyadapan dan pemalsuan identitas.
 
 ---
 
