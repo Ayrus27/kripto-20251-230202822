@@ -42,38 +42,62 @@ Contoh format:
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
+
 
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
+from cryptography import x509
+from cryptography.x509.oid import NameOID
+from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives.asymmetric import rsa
+from datetime import datetime, timedelta
+
+# Generate key pair
+key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+
+# Buat subject & issuer (CA sederhana = self-signed)
+subject = issuer = x509.Name([
+    x509.NameAttribute(NameOID.COUNTRY_NAME, u"ID"),
+    x509.NameAttribute(NameOID.ORGANIZATION_NAME, u"UPB Kriptografi"),
+    x509.NameAttribute(NameOID.COMMON_NAME, u"example.com"),
+])
+
+# Buat sertifikat
+cert = (
+    x509.CertificateBuilder()
+    .subject_name(subject)
+    .issuer_name(issuer)
+    .public_key(key.public_key())
+    .serial_number(x509.random_serial_number())
+    .not_valid_before(datetime.utcnow())
+    .not_valid_after(datetime.utcnow() + timedelta(days=365))
+    .sign(key, hashes.SHA256())
 )
+
+# Simpan sertifikat
+with open("cert.pem", "wb") as f:
+    f.write(cert.public_bytes(serialization.Encoding.PEM))
+
+print("Sertifikat digital berhasil dibuat: cert.pem")
+```
+
 
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
+Hasil Output Program Public Key Infrastructure
 ![Hasil Output](screenshots/output.png)
-)
+
 
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Apa fungsi utama Certificate Authority (CA)?
+    Fungsi utama Certificate Authority (CA) adalah sebagai pihak tepercaya yang bertugas melakukan verifikasi identitas dan menerbitkan sertifikat digital bagi entitas yang mengajukan permohonan. CA memastikan bahwa kunci publik yang tercantum dalam sertifikat benar-benar dimiliki oleh pihak yang sah, sehingga membangun kepercayaan dalam komunikasi digital. Dengan adanya CA, pengguna atau sistem dapat memverifikasi keaslian identitas suatu server atau individu sebelum melakukan pertukaran data secara aman.
+2. Mengapa self-signed certificate tidak cukup untuk sistem produksi?
+    Self-signed certificate tidak memadai untuk digunakan pada sistem produksi karena sertifikat tersebut tidak divalidasi oleh pihak ketiga yang tepercaya. Dalam kondisi ini, identitas pemilik sertifikat tidak dapat diverifikasi secara independen, sehingga berpotensi menimbulkan risiko keamanan seperti pemalsuan identitas. Selain itu, browser dan sistem operasi umumnya tidak mempercayai self-signed certificate secara default, yang menyebabkan peringatan keamanan dan menurunkan tingkat kepercayaan pengguna terhadap layanan yang disediakan.
+3. Bagaimana PKI mencegah serangan MITM dalam komunikasi TLS/HTTPS?
+    Public Key Infrastructure (PKI) mencegah serangan Man-in-the-Middle (MITM) dengan memastikan keaslian identitas server melalui proses verifikasi sertifikat digital yang diterbitkan oleh CA tepercaya. Pada saat koneksi TLS/HTTPS dibangun, klien akan memeriksa validitas sertifikat server, termasuk tanda tangan CA dan kesesuaian nama domain. Jika sertifikat tidak valid atau tidak dipercaya, koneksi akan ditolak. Mekanisme ini mencegah penyerang menyamar sebagai server asli, sehingga integritas dan kerahasiaan komunikasi tetap terjaga.
+
 ---
 
 ## 8. Kesimpulan
@@ -90,12 +114,11 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+    week10-pki
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+commit c38b3af5fcc0f07ab41472119eebcad7cca9ada3
+Author: Surya Subekti <115227173+Ayrus27@users.noreply.github.com>
+Date:   Mon Dec 15 20:34:09 2025 +0700
+
 ```
