@@ -52,25 +52,21 @@ def encrypt(text, key):
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+Hasil eksekusi program Secret Sharing:
 
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
 ![Hasil Output](screenshots/output.png)
-)
+
 
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Apa keuntungan utama Shamir Secret Sharing dibanding membagikan salinan kunci secara langsung?
+    - Shamir Secret Sharing memiliki keunggulan karena tidak menyimpan kunci secara utuh pada satu pihak atau dalam bentuk salinan penuh. Setiap pihak hanya memegang sebagian informasi yang secara individual tidak bermakna, sehingga kebocoran satu atau beberapa bagian tidak langsung membahayakan kerahasiaan kunci utama.
+2. Apa peran threshold (k) dalam keamanan secret sharing?
+    - Nilai threshold (k) berfungsi sebagai batas minimum jumlah bagian yang harus digabungkan untuk merekonstruksi secret. Mekanisme ini memastikan bahwa secret tetap aman selama jumlah bagian yang terkumpul kurang dari k, sekaligus memberikan kontrol terhadap tingkat toleransi kegagalan atau kompromi sistem.
+3. Berikan satu contoh skenario nyata di mana SSS sangat bermanfaat.
+    - Salah satu contoh penerapan SSS adalah pada pengelolaan kunci enkripsi data pusat (data center). Kunci utama dibagi ke beberapa administrator, sehingga hanya jika sejumlah administrator tertentu bekerja sama, kunci tersebut dapat diakses. Pendekatan ini mencegah penyalahgunaan akses oleh satu individu dan meningkatkan keamanan organisasi.
+
 ---
 
 ## 8. Kesimpulan
@@ -87,12 +83,11 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+    week11-secret-sharing
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+commit 584407bc1f15693f1f350ae1eea3adcba7a1043b
+Author: Surya Subekti <115227173+Ayrus27@users.noreply.github.com>
+Date:   Sat Jan 3 17:52:03 2026 +0700
+
 ```
