@@ -79,7 +79,7 @@ Hasil eksekusi program Aplikasi TLS:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan hasil praktikum, dapat disimpulkan bahwa penerapan protokol TLS pada website e-commerce berperan penting dalam menjamin keamanan komunikasi data melalui mekanisme enkripsi, autentikasi, dan integritas informasi. Hasil analisis sertifikat digital menunjukkan bahwa penggunaan HTTPS mampu melindungi data sensitif pengguna dari ancaman penyadapan dan serangan Man-in-the-Middle. Namun, penerapan kriptografi juga menimbulkan tantangan etika dan privasi, sehingga diperlukan kebijakan yang seimbang antara perlindungan data pribadi dan kepentingan keamanan publik.
 
 ---
 
