@@ -16,8 +16,11 @@ Kelas: [5IKRA]
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Secret sharing merupakan teknik kriptografi yang digunakan untuk membagi suatu informasi rahasia menjadi beberapa bagian (share) yang didistribusikan kepada pihak berbeda. Tujuan utama dari mekanisme ini adalah untuk menghindari ketergantungan pada satu pihak dalam penyimpanan rahasia. Setiap bagian yang dibagikan tidak memiliki makna secara mandiri, sehingga kerahasiaan informasi tetap terjaga meskipun sebagian share jatuh ke pihak yang tidak berwenang.
+
+Salah satu skema secret sharing yang paling dikenal adalah Shamir Secret Sharing, yang diperkenalkan oleh Adi Shamir. Metode ini memanfaatkan konsep polinomial dalam aritmetika modulo bilangan prima. Rahasia direpresentasikan sebagai konstanta dari suatu polinomial, sementara koefisien lainnya dipilih secara acak. Skema ini menerapkan prinsip threshold, yaitu jumlah minimum share yang diperlukan untuk merekonstruksi rahasia. Selama jumlah share yang dikumpulkan kurang dari threshold, rahasia tidak dapat dihitung kembali secara matematis.
+
+Proses rekonstruksi rahasia pada secret sharing dilakukan menggunakan teknik interpolasi, khususnya interpolasi Lagrange. Dengan menggabungkan sejumlah share yang memenuhi nilai threshold, polinomial awal dapat direkonstruksi, sehingga nilai rahasia dapat diperoleh kembali tanpa perlu mengetahui seluruh koefisien polinomial. Pendekatan ini memberikan keseimbangan antara keamanan dan ketersediaan data, sehingga secret sharing banyak digunakan pada sistem keamanan modern, seperti manajemen kunci kriptografi, sistem otorisasi bersama, dan penyimpanan data sensitif terdistribusi.
 
 ---
 
@@ -105,7 +108,7 @@ print("\nRecovered secret:", recovered)
 Hasil eksekusi program Secret Sharing:
 
 ![Hasil Output](screenshots/output.png)
-
+![Hasil Output](screenshots/output1.png)
 
 ---
 
