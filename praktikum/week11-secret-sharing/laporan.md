@@ -1,14 +1,17 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 11  
+Topik: [Secret Sharing (Shamir’s Secret Sharing)]  
+Nama: [Surya Subekti]  
+NIM: [230202822]  
+Kelas: [5IKRA]  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+- Menjelaskan konsep Shamir Secret Sharing (SSS).
+- Melakukan simulasi pembagian rahasia ke beberapa pihak menggunakan skema SSS.
+- Menganalisis keamanan skema distribusi rahasia.
+
 
 ---
 
