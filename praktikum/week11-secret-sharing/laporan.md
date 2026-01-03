@@ -123,8 +123,9 @@ Hasil eksekusi program Secret Sharing:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan pembahasan yang telah saya lakukan, secret sharing merupakan teknik kriptografi yang efektif untuk menjaga kerahasiaan data dengan membagi secret ke dalam beberapa bagian. Setiap bagian tidak memiliki arti secara mandiri sehingga risiko kebocoran data dapat diminimalkan.
 
+Melalui skema Shamir Secret Sharing, saya memahami bahwa konsep threshold memegang peranan penting, karena rahasia hanya dapat direkonstruksi apabila jumlah share yang digunakan memenuhi batas minimum. Dengan demikian, metode ini mampu meningkatkan keamanan sekaligus menjaga ketersediaan informasi pada sistem terdistribusi.
 ---
 
 ## 9. Daftar Pustaka
