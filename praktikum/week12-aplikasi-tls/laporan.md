@@ -8,7 +8,9 @@ Kelas: [5IKRA]
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+- penggunaan kriptografi pada email dan SSL/TLS.
+- Menjelaskan enkripsi dalam transaksi e-commerce.
+- Mengevaluasi isu etika & privasi dalam penggunaan kriptografi di kehidupan sehari-hari.
 
 ---
 
