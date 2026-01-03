@@ -15,8 +15,11 @@ Kelas: [5IKRA]
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Transport Layer Security (TLS) merupakan protokol keamanan yang digunakan untuk melindungi komunikasi data pada jaringan komputer, khususnya di internet. TLS bekerja pada lapisan transport untuk menyediakan mekanisme pengamanan berupa enkripsi data, autentikasi pihak yang berkomunikasi, serta menjaga integritas informasi selama proses transmisi. Protokol ini dikembangkan sebagai penerus Secure Socket Layer (SSL) dan saat ini menjadi standar utama dalam pengamanan layanan digital seperti web (HTTPS), email, dan aplikasi berbasis jaringan lainnya.
+
+Dalam implementasinya, TLS menggunakan kombinasi kriptografi kunci simetris dan kunci asimetris. Pada tahap awal komunikasi, TLS melakukan proses handshake yang melibatkan pertukaran sertifikat digital dan kunci publik untuk memverifikasi identitas server (dan klien jika diperlukan). Setelah proses autentikasi berhasil, kedua pihak akan menghasilkan session key yang digunakan untuk enkripsi simetris selama sesi komunikasi berlangsung. Pendekatan ini dipilih karena enkripsi simetris lebih efisien untuk pertukaran data dalam jumlah besar.
+
+Penerapan TLS memberikan manfaat utama dalam menjaga kerahasiaan dan keamanan data pengguna, namun juga menghadirkan tantangan tertentu. Pengelolaan sertifikat digital, ketergantungan pada Certificate Authority (CA), serta kerentanan akibat konfigurasi yang tidak tepat dapat memengaruhi tingkat keamanan sistem. Meskipun demikian, TLS tetap menjadi fondasi penting dalam komunikasi digital modern karena mampu meningkatkan kepercayaan, melindungi privasi, dan mengurangi risiko serangan siber seperti penyadapan dan pemalsuan data.
 
 ---
 
@@ -48,10 +51,21 @@ def encrypt(text, key):
 ---
 
 ## 6. Hasil dan Pembahasan
+1. Analisis Sertifikat Digital Website Tokopedia
+    - Berdasarkan hasil pemeriksaan sertifikat digital pada website Tokopedia, diketahui bahwa website tersebut menggunakan sertifikat Wildcard dengan Common Name (CN) *.tokopedia.com, yang memungkinkan perlindungan untuk seluruh subdomain. Sertifikat ini diterbitkan oleh DigiCert Global G2 TLS RSA SHA256 2020 CA1, salah satu Certificate Authority (CA) global yang terpercaya. Masa berlaku sertifikat dimulai pada 11 Juni 2025 dan berakhir pada 4 Juli 2026, menunjukkan bahwa sertifikat masih aktif dan valid.
+    Dari sisi kriptografi, sertifikat Tokopedia menggunakan algoritma RSA dengan hash SHA-256, yang merupakan standar keamanan modern untuk komunikasi TLS. Penggunaan algoritma ini memastikan proses autentikasi server berjalan aman dan data yang ditransmisikan tidak mudah dipalsukan atau dimodifikasi oleh pihak ketiga.
+2. Analisis Sertifikat Digital Website Shopee
+    - Hasil pemeriksaan pada website Shopee Indonesia menunjukkan bahwa situs ini juga menggunakan sertifikat Wildcard dengan Common Name (CN) *.shopee.co.id. Sertifikat tersebut diterbitkan oleh GlobalSign GCC R6 AlphaSSL CA 2023, yang merupakan CA internasional dengan reputasi baik dalam penyediaan sertifikat SSL/TLS. Sertifikat Shopee berlaku sejak 24 Maret 2025 hingga 25 April 2026.
+    Penggunaan sertifikat SSL/TLS ini memungkinkan Shopee untuk menyediakan koneksi aman bagi pengguna, khususnya pada proses login, pengisian data pribadi, dan transaksi pembayaran. Sertifikat yang masih valid memastikan bahwa komunikasi antara browser pengguna dan server Shopee telah terenkripsi serta terautentikasi dengan baik.
+3. Perbandingan Website HTTPS dan HTTP (NeverSSL)
+    - Berdasarkan pengamatan pada website NeverSSL, terlihat bahwa situs tersebut tidak menggunakan protokol HTTPS, melainkan hanya HTTP. Hal ini ditandai dengan munculnya peringatan “Not Secure” pada address bar browser. Website tanpa TLS tidak menyediakan mekanisme enkripsi, sehingga data yang dikirimkan dalam jaringan berada dalam bentuk plaintext dan dapat dengan mudah disadap oleh pihak tidak berwenang.
+    Sebaliknya, website e-commerce seperti Tokopedia dan Shopee yang menggunakan HTTPS mampu menjamin kerahasiaan, integritas, dan autentikasi data. Perbedaan ini menunjukkan bahwa penggunaan TLS sangat krusial dalam layanan digital modern, terutama yang melibatkan data sensitif dan transaksi keuangan. Tanpa TLS, risiko serangan seperti Man-in-the-Middle, pencurian kredensial, dan manipulasi data menjadi sangat tinggi.
+
 Hasil eksekusi program Aplikasi TLS:
 
-![Hasil Output](screenshots/output.png)
-
+![Hasil Output](screenshots/shopee.png)
+![Hasil Output](screenshots/tokopedia.png)
+![Hasil Output](screenshots/neverssl.png)
 
 ---
 
